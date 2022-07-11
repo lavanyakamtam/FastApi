@@ -22,7 +22,9 @@ def div(a : float,b: float):
 def mul(a : float,b: float):
     return "Multiplication : "+str(a*b)
 
-
+@app.get("/echo/{str}")
+def echo(str: str):
+    return str
 
 
 
